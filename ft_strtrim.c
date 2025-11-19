@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adolivie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/19 11:40:34 by adolivie          #+#    #+#             */
+/*   Updated: 2025/11/19 11:40:39 by adolivie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,13 +23,10 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+int	ft_strtrim_deb(char const *s1, char const *set)
 {
-	int		i;
-	int		j;
-	int		deb;
-	int		fin;
-	char	*ptr;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -30,7 +39,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 		}
 		j++;
 	}
-	deb = i;
+	return (i);
+}
+
+int	ft_strtrim_fin(char const *s1, char const *set)
+{
+	int	i;
+	int	j;
+
 	i = ft_strlen((char *)s1) - 1;
 	j = 0;
 	while (set[j])
@@ -42,22 +58,39 @@ char	*ft_strtrim(char const *s1, char const *set)
 		}
 		j++;
 	}
-	fin = i;
+	return (i);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	int		i;
+	int		j;
+	char	*ptr;
+	int		deb;
+	int		fin;
+
+	deb = ft_strtrim_deb(s1, set);
+	fin = ft_strtrim_fin(s1, set);
 	ptr = malloc(fin - deb + 1);
 	if (ptr == NULL)
 		return (NULL);
 	i = deb;
-    j = 0;
+	j = 0;
 	while (i <= fin)
 	{
 		ptr[j] = (char)s1[i];
 		i++;
-        j++;
+		j++;
 	}
-    ptr[j] = '\0';
+	ptr[j] = '\0';
 	return (ptr);
 }
+
 int	main(void)
 {
-	printf("%s\n", ft_strtrim("xxaxbcdxxx", "uxd"));
+	char	*str;
+
+	str = ft_strtrim("xxaxbcdxxx", "uxd");
+	printf("%s\n", str);
+	free(str);
 }
