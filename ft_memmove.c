@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 14:51:27 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/14 18:19:44 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:56:31 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
+/*
 int	main(void)
 {
 	char str[10];
@@ -60,4 +60,4 @@ int	main(void)
 	printf("%s\n", str2);
 	memmove(str, "AbcDef", 4);
 	printf("%s\n", str);
-}
+}*/

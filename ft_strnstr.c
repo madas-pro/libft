@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 21:12:07 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/14 21:42:19 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:53:13 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
+/*
 int	main(void)
 {
 	printf("%s\n", ft_strnstr("abcde", "b", 4));   // test lettre
@@ -47,4 +47,4 @@ int	main(void)
 	printf("%s\n", ft_strnstr("abcde", "e", 2));   // test lettre oor
 	printf("%s\n", ft_strnstr("abcde", "z", 15));  // test len > big
 	printf("%s\n", ft_strnstr("abcde", "", 4));    // test little vide
-}
+}*/

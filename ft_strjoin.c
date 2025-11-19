@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/19 11:51:59 by adolivie          #+#    #+#             */
+/*   Updated: 2025/11/19 11:52:02 by adolivie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -35,7 +47,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
-
+/*
 int	main(void)
 {
 	char *string1;
@@ -44,9 +56,8 @@ int	main(void)
 
 	string1 = "this is ";
 	string2 = "a copy";
-	/* Make newstr point to a duplicate of string*/
 	if ((newstr = ft_strjoin(string1, string2)) != NULL)
 		printf("The new string is: %s\n", newstr);
 	return (0);
 	free(newstr);
-}
+}*/

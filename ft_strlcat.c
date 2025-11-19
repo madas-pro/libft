@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 17:41:13 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/14 18:19:44 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:49:52 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[i + j] = '\0';
 	return (len_dest + len_src);
 }
-
+/*
 int	main(void)
 {
 	char		dest[6] = "Salut";
@@ -49,4 +49,4 @@ int	main(void)
 
 	printf("%zu\n", ft_strlcat(dest, src, 5));
 	printf("%s\n", dest);
-}
+}*/

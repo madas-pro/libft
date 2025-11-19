@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/19 11:54:03 by adolivie          #+#    #+#             */
+/*   Updated: 2025/11/19 11:54:39 by adolivie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,7 +26,7 @@ int	ft_strlen(char *str)
 char	*ft_strdup(const char *string)
 {
 	char	*ptr;
-	int	i;
+	int		i;
 
 	ptr = malloc(ft_strlen((char *)string) + 1);
 	if (ptr == NULL)
@@ -26,18 +38,17 @@ char	*ft_strdup(const char *string)
 		i++;
 	}
 	ptr[i] = '\0';
-    return (ptr);
+	return (ptr);
 }
-
+/*
 int	main(void)
 {
 	char	*string;
 	char	*newstr;
 
 	string = "this is a copy";
-	/* Make newstr point to a duplicate of string*/
 	if ((newstr = ft_strdup(string)) != NULL)
 		printf("The new string is: %s\n", newstr);
 	return (0);
-    free(newstr);
-}
+	free(newstr);
+}*/

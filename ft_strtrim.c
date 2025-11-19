@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adolivie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 11:40:34 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/19 11:40:39 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:50:38 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ptr[j] = '\0';
 	return (ptr);
 }
-
+/*
 int	main(void)
 {
 	char	*str;
@@ -93,4 +93,4 @@ int	main(void)
 	str = ft_strtrim("xxaxbcdxxx", "uxd");
 	printf("%s\n", str);
 	free(str);
-}
+}*/

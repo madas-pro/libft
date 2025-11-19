@@ -3,13 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adolivie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:29:55 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/10 15:29:56 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:56:15 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdio.h>
+
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t	i;

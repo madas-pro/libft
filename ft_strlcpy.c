@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 17:11:01 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/14 18:28:22 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/19 11:53:39 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (ft_strlen((char *)src));
 }
-
+/*
 int	main(void)
 {
 	char dest[0];
 	const char *src = "Bonjour";
 	printf("%zu\n", ft_strlcpy(dest, src, 8));
 	printf("%s\n", dest);
-}
+}*/
