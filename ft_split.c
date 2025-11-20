@@ -6,81 +6,103 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 12:12:57 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/19 16:21:46 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/20 22:33:01 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-char	**ft_split_alloc(char const *s, char c)
+int	ft_count_words(char *str, char c)
 {
-	int		count;
-	int		i;
-	int		reset;
-	char	**ptr;
+	int	i;
+	int	reset;
+	int	count;
 
-	count = 0;
 	i = 0;
 	reset = 0;
-	while (s[i])
+	count = 0;
+	while (str[i])
 	{
-		if ((s[i] != c) && (reset == 0))
+		if ((str[i] != c) && (reset == 0))
 		{
-			count += 2; // pr le \0
+			count++;
 			reset = 1;
 		}
-		else if (s[i] != c)
-			count++;
-		else
+		else if (str[i] == c)
 			reset = 0;
 		i++;
 	}
-	ptr = malloc(count+100);
+	return (count);
+}
+
+int	ft_strlen_split(char *str, char c)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != c && str[i])
+		i++;
+	return (i);
+}
+
+char	*ft_strdup_split(const char *string, char c)
+{
+	char	*ptr;
+	int		i;
+	int		len;
+
+	len = ft_strlen_split((char *)string, c) + 1;
+	ptr = malloc(len);
 	if (ptr == NULL)
 		return (NULL);
+	i = 0;
+	while (i < (len - 1))
+	{
+		ptr[i] = string[i];
+		i++;
+	}
+	ptr[i] = '\0';
 	return (ptr);
 }
 
 char	**ft_split(char const *s, char c)
 {
+	char	**str;
 	int		i;
-	int		j;
-	int		k;
-	char	**ptr;
 	int		reset;
+	int		j;
 
+	str = malloc(ft_count_words((char *)s, c) * sizeof(char *) + 1);
+	if (str == NULL)
+		return (NULL);
 	i = 0;
-	j = 0;
-	k = 0;
 	reset = 0;
-	ptr = ft_split_alloc(s, c);
-	while (s[k])
+	j = 0;
+	while (s[i])
 	{
-		if (s[k] != c)
+		if ((s[i] != c) && (reset == 0))
 		{
-			ptr[i][j] = s[k];
-			j++;
+			str[j] = ft_strdup_split(s + i, c);
 			reset = 1;
+			j++;
 		}
-		else if ((s[k] == c) && (reset == 1))
-		{
+		else if (s[i] == c)
 			reset = 0;
-			ptr[i][j] = '\0';
-			i++;
-		}
-		k++;
+		i++;
 	}
-	return (ptr);
+	str[j] = NULL;
+	return (str);
 }
+
 int	main(void)
 {
-	char **strr;
-    int i;
+	char	**strr;
+	int		i;
 
-    strr = ft_split("xabxcxxxdefxx", 'c');
-    i = 0;
-    while (strr[i])
+	strr = ft_split("xabxcxxxdefxx", 'x');
+	i = 0;
+	while (strr[i])
 	{
 		printf("%s\n", strr[i]);
 		i++;
