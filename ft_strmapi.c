@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 22:34:39 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/21 01:00:47 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/21 06:21:18 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	ptr[i] = '\0';
 	return (ptr);
 }
-
+/*
 int	main(void)
 {
 	char	*str;
@@ -56,4 +56,4 @@ int	main(void)
 	str = ft_strmapi("Abcdef", ft_oupper);
 	printf("%s\n", str);
 	free(str);
-}
+}*/

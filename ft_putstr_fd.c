@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 00:56:14 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/21 00:59:52 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/21 06:21:51 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 
-int	main(void)
-{
-	ft_putstr_fd("Abcdef", 1);
-}
+// int	main(void)
+// {
+// 	ft_putstr_fd("Abcdef", 1);
+// }

@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 12:12:57 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/20 22:33:01 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/21 06:21:41 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,17 +95,17 @@ char	**ft_split(char const *s, char c)
 	return (str);
 }
 
-int	main(void)
-{
-	char	**strr;
-	int		i;
+// int	main(void)
+// {
+// 	char	**strr;
+// 	int		i;
 
-	strr = ft_split("xabxcxxxdefxx", 'x');
-	i = 0;
-	while (strr[i])
-	{
-		printf("%s\n", strr[i]);
-		i++;
-	}
-	free(strr);
-}
+// 	strr = ft_split("xabxcxxxdefxx", 'x');
+// 	i = 0;
+// 	while (strr[i])
+// 	{
+// 		printf("%s\n", strr[i]);
+// 		i++;
+// 	}
+// 	free(strr);
+// }

@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 01:58:00 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/21 03:14:35 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/21 06:22:20 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,29 +78,29 @@ char	*ft_itoa(int n)
 	return (ptr);
 }
 
-int	main(void)
-{
-	char	*str;
+// int	main(void)
+// {
+// 	char	*str;
 
-	str = ft_itoa(214);
-	printf("%s\n", str);
-	free(str);
-	str = ft_itoa(2);
-	printf("%s\n", str);
-	free(str);
-	str = ft_itoa(-0);
-	printf("%s\n", str);
-	free(str);
-	str = ft_itoa(2147483647);
-	printf("%s\n", str);
-	free(str);
-	str = ft_itoa(-2147483648);
-	printf("%s\n", str);
-	free(str);
-	str = ft_itoa(-2);
-	printf("%s\n", str);
-	free(str);
-	str = ft_itoa(-23);
-	printf("%s\n", str);
-	free(str);
-}
+// 	str = ft_itoa(214);
+// 	printf("%s\n", str);
+// 	free(str);
+// 	str = ft_itoa(2);
+// 	printf("%s\n", str);
+// 	free(str);
+// 	str = ft_itoa(-0);
+// 	printf("%s\n", str);
+// 	free(str);
+// 	str = ft_itoa(2147483647);
+// 	printf("%s\n", str);
+// 	free(str);
+// 	str = ft_itoa(-2147483648);
+// 	printf("%s\n", str);
+// 	free(str);
+// 	str = ft_itoa(-2);
+// 	printf("%s\n", str);
+// 	free(str);
+// 	str = ft_itoa(-23);
+// 	printf("%s\n", str);
+// 	free(str);
+// }

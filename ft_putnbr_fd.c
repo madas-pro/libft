@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 01:08:03 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/21 01:30:11 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/21 06:21:55 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,13 @@ void	ft_putnbr_fd(int n, int fd)
 	ft_putchar_fd(n % 10 + '0', fd);
 }
 
-int	main(void)
-{
-	ft_putnbr_fd(2147483647, 1);
-	ft_putnbr_fd(-2147483648, 1);
-	ft_putnbr_fd(2, 1);
-	ft_putnbr_fd(0, 1);
-	ft_putnbr_fd(-1, 1);
-	ft_putnbr_fd(-45, 1);
-	ft_putnbr_fd(-0, 1);
-}
+// int	main(void)
+// {
+// 	ft_putnbr_fd(2147483647, 1);
+// 	ft_putnbr_fd(-2147483648, 1);
+// 	ft_putnbr_fd(2, 1);
+// 	ft_putnbr_fd(0, 1);
+// 	ft_putnbr_fd(-1, 1);
+// 	ft_putnbr_fd(-45, 1);
+// 	ft_putnbr_fd(-0, 1);
+// }
