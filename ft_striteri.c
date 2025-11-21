@@ -1,25 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/19 11:59:14 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/21 03:58:00 by adolivie         ###   ########.fr       */
+/*   Created: 2025/11/21 03:27:54 by adolivie          #+#    #+#             */
+/*   Updated: 2025/11/21 03:57:24 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memchr(const void *s, int c, size_t n)
+#include <stdio.h>
+
+void	ft_oupper(unsigned int i, char *c)
 {
-	size_t	i;
+	if (c[i] >= 'a' && c[i] <= 'z')
+		c[i] = c[i] - 32;
+}
+
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+{
+	unsigned int	i;
 
 	i = 0;
-	while (i < n)
+	if (!s || !f)
+		return ;
+	while (s[i])
 	{
-		if ((s[i]) == c)
-			return (s + i);
+		f(i, s);
 		i++;
 	}
-	return (NULL);
 }
+
+// int	main(void)
+// {
+// 	char str[] = "Abcdef";
+// 	ft_striteri(str, ft_oupper);
+// 	printf("%s\n", str);
+// 	return (0);
+// }

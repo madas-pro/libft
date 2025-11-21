@@ -6,13 +6,13 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 11:57:04 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/19 11:59:03 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/21 03:59:57 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-int	ft_memcmp(const void *s1, const void *s2, size_t int)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
 
