@@ -6,14 +6,14 @@
 #    By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/21 06:26:04 by adolivie          #+#    #+#              #
-#    Updated: 2025/11/21 06:27:11 by adolivie         ###   ########.fr        #
+#    Updated: 2025/11/21 06:29:23 by adolivie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= lib.a
+NAME		= libft.a
 
-CC			= cc
-CFLAGS		= -Wall -Wextra -Werror
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 
 SRC			=	ft_isdigit.c \
 				ft_isalnum.c \
