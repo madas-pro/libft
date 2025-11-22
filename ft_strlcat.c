@@ -6,9 +6,11 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 17:41:13 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/19 11:49:52 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/22 15:30:24 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 int	ft_strlen(char *str)
 {

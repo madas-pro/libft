@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 13:28:32 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/14 21:13:20 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/22 15:31:20 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ char	*strrchr(const char *str, int c)
 	char	*result;
 
 	i = 0;
-	result = NULL;
 	while (str[i] != '\0')
 	{
 		if (str[i] == c)

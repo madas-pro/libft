@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adolivie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 11:47:45 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/14 11:49:13 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/22 15:29:17 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 void	*ft_bzero(void *s, size_t n)
 {
@@ -25,7 +27,6 @@ void	*ft_bzero(void *s, size_t n)
 	return (s);
 }
 /*
-#include <stdio.h>
 int main()
 {
 	char str[10];
