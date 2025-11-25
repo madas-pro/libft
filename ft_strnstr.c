@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 21:12:07 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/19 11:53:13 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/25 11:01:00 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		if (big[i] == little[0])
 		{
 			j = 0;
-			while ((little[j] == big[i + j]))
+			while ((little[j] == big[i + j] && i + j < len))
 			{
 				if (little[j + 1] == '\0')
 					return ((char *)(big + i));
