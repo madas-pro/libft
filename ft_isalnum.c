@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:06:42 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/22 15:28:49 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/25 10:15:07 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	ft_isalpha(int character)
 		return (1);
 	return (0);
 }
+
 int	ft_isdigit(int character)
 {
 	if (character > 47 && character < 58)
