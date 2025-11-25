@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 04:02:09 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/22 15:25:05 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/25 11:13:31 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
+int     ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 
@@ -54,7 +55,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *str);
 
 /* malloc */
-void	*calloc(size_t nmemb, size_t size);
+void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *string);
 
 /* fonctions originales */

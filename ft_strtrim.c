@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 11:40:34 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/19 11:50:38 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/25 11:59:00 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int	ft_strtrim_deb(char const *s1, char const *set)
 
 	i = 0;
 	j = 0;
+	while (s1[i] == ' ')
+		i++;
 	while (set[j])
 	{
 		if (s1[i] == set[j])
@@ -71,7 +73,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	deb = ft_strtrim_deb(s1, set);
 	fin = ft_strtrim_fin(s1, set);
-	ptr = malloc(fin - deb + 1);
+	ptr = malloc(fin - deb + 2);
 	if (ptr == NULL)
 		return (NULL);
 	i = deb;

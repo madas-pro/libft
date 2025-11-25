@@ -6,7 +6,7 @@
 #    By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/11/21 06:26:04 by adolivie          #+#    #+#              #
-#    Updated: 2025/11/21 06:29:23 by adolivie         ###   ########.fr        #
+#    Updated: 2025/11/25 11:10:08 by adolivie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 SRC			=	ft_isdigit.c \
 				ft_isalnum.c \
+				ft_isalpha.c \
 				ft_isascii.c \
 				ft_isprint.c \
 				ft_strlen.c \

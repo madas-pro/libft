@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 01:58:00 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/21 06:22:20 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/25 12:18:12 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_strlen_itoa(int n)
 		n = -n;
 		i++;
 	}
-	while (n > 10)
+	while (n >= 10)
 	{
 		n = n / 10;
 		i++;
@@ -46,6 +46,7 @@ char	*ft_itoa_quepourceptitfdpdeintmin(char *ptr)
 	ptr[8] = '6';
 	ptr[9] = '4';
 	ptr[10] = '8';
+	ptr[11] = '\0';
 	return (ptr);
 }
 
@@ -67,7 +68,7 @@ char	*ft_itoa(int n)
 		n = -n;
 		ptr[0] = '-';
 	}
-	while (n > 10)
+	while (n >= 10)
 	{
 		ptr[i] = (n % 10) + '0';
 		n = n / 10;

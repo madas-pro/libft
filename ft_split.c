@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 12:12:57 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/21 06:21:41 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/25 12:10:55 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ char	**ft_split(char const *s, char c)
 	int		reset;
 	int		j;
 
-	str = malloc(ft_count_words((char *)s, c) * sizeof(char *) + 1);
+	str = malloc((ft_count_words((char *)s, c) + 1) * sizeof(char *));
 	if (str == NULL)
 		return (NULL);
 	i = 0;
@@ -107,5 +107,7 @@ char	**ft_split(char const *s, char c)
 // 		printf("%s\n", strr[i]);
 // 		i++;
 // 	}
-// 	free(strr);
+// 	for (int i = 0; strr[i]; i++)
+//    	free(strr[i]);
+//	free(strr);
 // }
