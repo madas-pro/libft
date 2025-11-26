@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 20:56:02 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/26 16:19:00 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 16:33:53 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
-	
+
 	i = 0;
 	if (n <= 0)
 	{

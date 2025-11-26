@@ -6,12 +6,12 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 04:02:09 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/26 15:36:45 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 16:33:14 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef libft
-# define libft
+#ifndef LIBFT_H
+# define LIBFT_H
 
 # include <stdio.h>
 # include <stdlib.h>
