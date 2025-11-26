@@ -6,27 +6,11 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 12:01:22 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/25 12:27:03 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 16:51:13 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-void	*ft_bzero(void *s, size_t n)
-{
-	size_t	i;
-	char	*p;
-
-	i = 0;
-	p = (char *)s;
-	while (i < n)
-	{
-		p[i] = '\0';
-		i++;
-	}
-	return (s);
-}
+#include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

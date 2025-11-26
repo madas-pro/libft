@@ -6,19 +6,11 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 22:34:39 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/26 15:33:51 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 16:54:52 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	ft_oupper(unsigned int i, char c)
-{
-	(void)i;
-	if (c >= 'a' && c <= 'z')
-		c = c + 'A' - 'a';
-	return (c);
-}
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

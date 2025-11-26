@@ -6,16 +6,11 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 12:02:06 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/25 10:54:37 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 16:50:46 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int character)
-{
-	if (character > 47 && character < 58)
-		return (1);
-	return (0);
-}
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

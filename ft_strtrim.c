@@ -6,75 +6,52 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 11:40:34 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/26 15:34:20 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 16:48:42 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strtrim_deb(char const *s1, char const *set)
+int	ft_seen(char c, const char *set)
 {
 	int	i;
-	int	j;
 
 	i = 0;
-	j = 0;
-	while (s1[i] == ' ')
+	while (set[i])
+	{
+		if (c == set[i])
+		{
+			return (1);
+		}
 		i++;
-	while (set[j])
-	{
-		if (s1[i] == set[j])
-		{
-			j = 0;
-			i++;
-		}
-		j++;
 	}
-	return (i);
-}
-
-int	ft_strtrim_fin(char const *s1, char const *set)
-{
-	int	i;
-	int	j;
-
-	i = ft_strlen((char *)s1) - 1;
-	j = 0;
-	while (set[j])
-	{
-		if (s1[i] == set[j])
-		{
-			j = 0;
-			i--;
-		}
-		j++;
-	}
-	return (i);
+	return (0);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		i;
-	int		j;
-	char	*ptr;
-	int		deb;
-	int		fin;
+	int		end;
+	int		start;
+	int		len;
+	char	*tab;
 
-	deb = ft_strtrim_deb(s1, set);
-	fin = ft_strtrim_fin(s1, set);
-	ptr = malloc(fin - deb + 2);
-	if (ptr == NULL)
+	if (!s1 || !set)
 		return (NULL);
-	i = deb;
-	j = 0;
-	while (i <= fin)
-	{
-		ptr[j] = (char)s1[i];
-		i++;
-		j++;
-	}
-	ptr[j] = '\0';
-	return (ptr);
+	start = 0;
+	end = ft_strlen(s1) - 1;
+	while (s1[start] && ft_seen(s1[start], set))
+		start++;
+	while (end > start && ft_seen(s1[end], set))
+		end--;
+	len = end - start + 1;
+	tab = malloc(len + 1);
+	if (!tab)
+		return (NULL);
+	len = 0;
+	while (start <= end)
+		tab[len++] = s1[start++];
+	tab[len] = '\0';
+	return (tab);
 }
 /*
 int	main(void)

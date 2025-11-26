@@ -6,25 +6,11 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 15:06:42 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/25 10:15:07 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 16:51:33 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int character)
-{
-	if (character > 64 && character < 91)
-		return (1);
-	else if (character > 96 && character < 123)
-		return (1);
-	return (0);
-}
-
-int	ft_isdigit(int character)
-{
-	if (character > 47 && character < 58)
-		return (1);
-	return (0);
-}
+#include "libft.h"
 
 int	ft_isalnum(int character)
 {
