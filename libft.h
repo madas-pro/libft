@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 04:02:09 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/25 11:13:31 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 15:36:45 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 # define libft
 
 # include <stdio.h>
+# include <stdlib.h>
 # include <unistd.h>
 
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
-int     ft_isalpha(int c);
+int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);
 

@@ -6,22 +6,11 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 11:40:34 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/25 11:59:00 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 15:34:20 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
+#include "libft.h"
 
 int	ft_strtrim_deb(char const *s1, char const *set)
 {

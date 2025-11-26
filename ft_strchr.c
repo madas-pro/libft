@@ -6,18 +6,24 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 12:56:01 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/19 11:55:07 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 15:41:38 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strchr(const char *str, int c)
+#include <stdlib.h>
+
+char	*ft_strchr(const char *str, int c)
 {
-	int	i;
+	int				i;
+	unsigned char	p;
 
 	i = 0;
-	while (str[i] != '\0' && str[i] != c)
+	p = (unsigned char)c;
+	while (str[i] != '\0' && str[i] != p)
 		i++;
-	return ((char *)str + i);
+	if (str[i] == '\0' && p != '\0')
+		return (NULL);
+	return ((char *)&str[i]);
 }
 /*
 int	main(void)

@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 12:01:22 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/22 15:42:53 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/25 12:27:03 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_bzero(void *s, size_t n)
 	return (s);
 }
 
-void	*calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	int	*ptr;
 

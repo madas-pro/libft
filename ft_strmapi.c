@@ -6,12 +6,11 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/20 22:34:39 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/21 06:21:18 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 15:33:51 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	ft_oupper(unsigned int i, char c)
 {
@@ -19,16 +18,6 @@ char	ft_oupper(unsigned int i, char c)
 	if (c >= 'a' && c <= 'z')
 		c = c + 'A' - 'a';
 	return (c);
-}
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
 }
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

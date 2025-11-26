@@ -6,7 +6,7 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/21 01:08:03 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/21 06:21:55 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 15:04:22 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, "-", 1);
 		n = -n;
 	}
-	if (n > 10)
+	if (n >= 10)
 	{
 		ft_putnbr_fd(n / 10, fd);
 	}

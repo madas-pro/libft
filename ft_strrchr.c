@@ -6,23 +6,36 @@
 /*   By: adolivie <adolivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/14 13:28:32 by adolivie          #+#    #+#             */
-/*   Updated: 2025/11/25 10:12:56 by adolivie         ###   ########.fr       */
+/*   Updated: 2025/11/26 15:41:12 by adolivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strrchr(const char *str, int c)
+#include <stdlib.h>
+
+char	*ft_strrchr(const char *str, int c)
 {
-	int		i;
-	char	*result;
+	int				i;
+	char			*result;
+	int				found;
+	unsigned char	p;
 
 	i = 0;
+	found = 0;
+	p = (unsigned char)c;
 	while (str[i] != '\0')
 	{
-		if (str[i] == c)
+		if (str[i] == p)
+		{
 			result = (char *)str + i;
+			found = 1;
+		}
 		i++;
 	}
-	return (result);
+	if (found == 1)
+		return (result);
+	if (p == '\0')
+		return ((char *)str + i);
+	return (NULL);
 }
 /*
 int	main(void)
